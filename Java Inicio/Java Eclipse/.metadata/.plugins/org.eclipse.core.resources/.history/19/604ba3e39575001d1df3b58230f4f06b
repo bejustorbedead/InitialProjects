@@ -1,0 +1,11 @@
+package listaEncadeada;
+
+public class Livro {
+	private String nome;
+	private double preco;
+	
+	public Livro() {
+		this.nome = null;
+		this.preco = 0.0;
+	}
+}

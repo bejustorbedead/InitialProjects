@@ -1,0 +1,34 @@
+package programa;
+
+import java.util.ArrayList;
+
+public class Aula_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<Integer> vetor = new ArrayList<Integer>();
+		
+		//adicionar elementos
+		
+		int limite = 1000000; 
+		long inicial = System.currentTimeMillis();
+		long tempoFinal;
+		
+		for (int i = 0; i < limite; i++) {
+			vetor.add(i);
+		}
+		tempoFinal = System.currentTimeMillis();
+		System.out.println(tempoFinal - inicial);
+		
+		inicial = System.currentTimeMillis();
+		
+		for (int i = 0; i < limite; i++) {
+			listaLigada.adicionar(1);
+		}
+		tempoFinal = System.currentTimeMillis();
+		System.out.println(tempoFinal - inicial);
+		
+	}
+
+}

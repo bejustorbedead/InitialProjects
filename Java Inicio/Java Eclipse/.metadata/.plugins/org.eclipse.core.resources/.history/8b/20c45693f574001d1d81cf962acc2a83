@@ -1,0 +1,13 @@
+package programa;
+
+import vetores.ListaLigada;
+
+public class Aula_2 {
+
+	public static void main(String[] args) {
+		ListaLigada lista = new ListaLigada();
+		System.out.print(lista.getTamanho());
+
+	}
+
+}

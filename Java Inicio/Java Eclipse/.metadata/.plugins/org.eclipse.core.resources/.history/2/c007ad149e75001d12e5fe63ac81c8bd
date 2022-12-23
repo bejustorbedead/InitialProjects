@@ -1,0 +1,54 @@
+package listaEncadeada;
+
+public class ListaEncadeada {
+	
+	private int elemento;
+	private ListaEncadeada nova;
+	
+	
+	public ListaEncadeada(int elemento, ListaEncadeada nova) {
+		this.elemento = elemento;
+		this.nova = nova;
+	}
+
+	public int getElemento() {
+		return elemento;
+	}
+
+	public void setElemento(int elemento) {
+		this.elemento = elemento;
+	}
+
+	public ListaEncadeada getNova() {
+		return nova;
+	}
+
+	public void setNova(ListaEncadeada nova) {
+		this.nova = nova;
+	}
+
+	public void adiciona(Livro livro) {
+		Celula celula = new Celula(elemento);
+	}
+	
+	public void adiciona(int posicao, Livro elemento) {
+		
+	}
+	
+	public Livro pega(int posicao) {
+		
+	}
+	
+	public void remove(int posicao) {
+		
+	}
+	
+	public int tamanho() {
+		
+	}
+	
+	public boolean contem(Livro livro) {
+		
+	}
+	
+}

@@ -1,0 +1,10 @@
+package listaEncadeada;
+
+public class Celula {
+	private Celula primeira;
+	private Celula ultima;
+	private int totalDeElementos;
+	
+	public Celula() {
+	}
+}

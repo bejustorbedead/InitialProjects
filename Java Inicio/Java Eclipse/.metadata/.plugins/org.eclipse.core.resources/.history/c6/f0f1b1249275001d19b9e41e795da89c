@@ -1,0 +1,41 @@
+package programa;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+			int [] vetor = new int[5];
+			int maiorIdade = 0;
+			int menorIdade = 0;
+			
+			for (int i = 0; i < vetor.length; i++) {
+				System.out.print("Escreva uma idade: ");
+				int idade = sc.nextInt();
+				vetor[i] = idade;
+				
+				if (maiorIdade <= idade) {
+					maiorIdade = idade;
+				}
+				
+				if (menorIdade >= idade) {
+					menorIdade = idade;
+				}
+			}
+			
+			
+			System.out.print("[");
+			for (int i = 0; i < vetor.length; i++) {
+				System.out.print(" "+vetor[i]+" ");
+			}
+			System.out.print("]");
+			System.out.println();
+			System.out.println("Maior Idade: "+maiorIdade);
+			System.out.println("Menor Idade: "+menorIdade);
+			
+		sc.close();
+	}
+
+}

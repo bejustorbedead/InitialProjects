@@ -1,0 +1,80 @@
+package vetores;
+
+public class ListaLigada<tipo> {
+	private Elemento<tipo> primeiro;
+	private Elemento<tipo> ultimo;
+	private int tamanho;
+	
+	public ListaLigada() {
+		this.tamanho = 0;
+	}
+	
+	public Elemento<tipo> getPrimeiro() {
+		return primeiro;
+	}
+	public void setPrimeiro(Elemento<tipo> primeiro) {
+		this.primeiro = primeiro;
+	}
+	public Elemento<tipo> getUltimo() {
+		return ultimo;
+	}
+	public void setUltimo(Elemento<tipo> ultimo) {
+		this.ultimo = ultimo;
+	}
+	public int getTamanho() {
+		return tamanho;
+	}
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+	
+	public void adicionar(tipo novoValor) {
+		Elemento<tipo> novoElemento = new Elemento<tipo>(novoValor);
+		if (primeiro == null && ultimo == null) {
+			this.primeiro = novoElemento;
+			this.ultimo = novoElemento;
+		} else {
+			this.ultimo.setProximo(novoElemento);
+			this.ultimo = novoElemento;
+		}
+		this.tamanho++;
+	}
+	
+	public void remover(tipo valorProcurado) {
+		Elemento<tipo> atual = this.primeiro;
+		Elemento<tipo> anterior = null;
+		for(int i = 0; i < this.getTamanho(); i++) {
+			if (atual == primeiro && atual == ultimo) {
+				this.primeiro = null;
+				this.ultimo = null;
+			}
+			if (atual == primeiro) {
+				this.primeiro = atual.getProximo();
+				atual.setProximo(null);
+			} else if (atual == ultimo) {
+				this.ultimo = anterior;
+				anterior.setProximo(null);
+			} else {
+				anterior.setProximo(atual.getProximo());
+				atual=null;
+			}
+				this.tamanho--;
+				break;
+			}
+			anterior = atual;
+			atual = atual.getProximo();
+		}
+	
+	public Elemento get(int posicao) {
+		Elemento atual = this.primeiro;
+		for (int i = 0; i<posicao; i++) {
+			if (atual.getProximo() != null) {
+				atual = atual.getProximo();
+			} else {
+				break;
+			}
+		}
+		return atual;
+	}
+	
+}

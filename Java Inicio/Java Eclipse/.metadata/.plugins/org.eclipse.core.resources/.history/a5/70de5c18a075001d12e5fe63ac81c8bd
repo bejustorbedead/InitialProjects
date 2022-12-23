@@ -1,0 +1,50 @@
+package listaEncadeada;
+
+public class ListaEncadeada {
+
+	private Celula primeiro;
+	private Celula ultimo;
+	private int tamanho;
+	
+	public ListaEncadeada() {
+		this.tamanho = 0; 
+	}
+	
+	public Celula getPrimeiro() {
+		return primeiro;
+	}
+	public void setPrimeiro(Celula primeiro) {
+		this.primeiro = primeiro;
+	}
+	public Celula getUltimo() {
+		return ultimo;
+	}
+	public void setUltimo(Celula ultimo) {
+		this.ultimo = ultimo;
+	}
+	public int getTamanho() {
+		return tamanho;
+	}
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+	
+	public void adicionar(String valor) {
+		Celula celula = new Celula(valor);
+		if (primeiro == null && ultimo == null) {
+			primeiro = valor;
+			ultimo = valor;
+		}
+		
+		tamanho++;
+	}
+	
+	public void remover(String valor) {
+		
+	}
+	
+	public Celula get(int posicao) {
+		return null;
+	}
+	
+}

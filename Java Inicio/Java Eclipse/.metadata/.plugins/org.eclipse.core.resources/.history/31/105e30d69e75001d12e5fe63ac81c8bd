@@ -1,0 +1,43 @@
+package listaEncadeada;
+
+public class Celula {
+	private Celula primeira;
+	private Celula ultima;
+	private int totalDeElementos;
+	
+	public Celula(int totalDeElementos) {
+		this.totalDeElementos = totalDeElementos;
+	}
+
+	public Celula(Celula primeira, Celula ultima, int totalDeElementos) {
+		this.primeira = primeira;
+		this.ultima = ultima;
+		this.totalDeElementos = totalDeElementos;
+	}
+
+	public Celula getPrimeira() {
+		return primeira;
+	}
+
+	public void setPrimeira(Celula primeira) {
+		this.primeira = primeira;
+	}
+
+	public Celula getUltima() {
+		return ultima;
+	}
+
+	public void setUltima(Celula ultima) {
+		this.ultima = ultima;
+	}
+
+	public int getTotalDeElementos() {
+		return totalDeElementos;
+	}
+
+	public void setTotalDeElementos(int totalDeElementos) {
+		this.totalDeElementos = totalDeElementos;
+	}
+	
+	
+}

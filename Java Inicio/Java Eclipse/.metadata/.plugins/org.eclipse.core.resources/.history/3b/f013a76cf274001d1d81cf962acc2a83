@@ -1,0 +1,30 @@
+package programa;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String vetor[] = new String[10];
+		
+		vetor[0] = "Daniel";
+		vetor[1] = "Felipe";
+		vetor[2] = "Manuela";
+		vetor[3] = "Matheus";
+		vetor[4] = "Breno";
+		vetor[5] = "Cindy";
+		vetor[6] = "Arthur";
+		vetor[7] = "Emanuele";
+		vetor[8] = "Pará";
+		vetor[9] = "Henry";
+		
+		for (int i = 0; i<vetor.length; i++) {
+			System.out.print(vetor[i] + ". ");
+		}
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,8 @@
+package vetores;
+
+public class Elemento {
+	private String valor;
+	private Elemento proximo;
+	
+	
+}

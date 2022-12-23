@@ -1,0 +1,20 @@
+package listaEncadeada;
+
+public class Celula {
+	private Celula primeira;
+	private Celula ultima;
+	
+	public Celula getPrimeira() {
+		return primeira;
+	}
+	public void setPrimeira(Celula primeira) {
+		this.primeira = primeira;
+	}
+	public Celula getUltima() {
+		return ultima;
+	}
+	public void setUltima(Celula ultima) {
+		this.ultima = ultima;
+	}
+
+}

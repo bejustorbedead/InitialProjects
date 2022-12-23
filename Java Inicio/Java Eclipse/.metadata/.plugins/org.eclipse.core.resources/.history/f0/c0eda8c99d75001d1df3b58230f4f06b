@@ -1,0 +1,31 @@
+package listaEncadeada;
+
+public class ListaEncadeada {
+	
+	private int elemento;
+	
+	public void adiciona(Livro livro) {
+
+	}
+	
+	public void adiciona(int posicao, Livro elemento) {
+		
+	}
+	
+	public Livro pega(int posicao) {
+		
+	}
+	
+	public void remove(int posicao) {
+		
+	}
+	
+	public int tamanho() {
+		
+	}
+	
+	public boolean contem(Livro livro) {
+		
+	}
+	
+}

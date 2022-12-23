@@ -1,0 +1,24 @@
+package vetores;
+
+public class Elemento<tipo> {
+	private tipo valor;
+	private Elemento<tipo> proximo;
+	
+	public Elemento(tipo novoValor) {
+		this.valor = novoValor;
+	}
+	
+	public tipo getValor() {
+		return valor;
+	}
+	public void setValor(tipo valor) {
+		this.valor = valor;
+	}
+	public Elemento getProximo() {
+		return proximo;
+	}
+	public void setProximo(Elemento proximo) {
+		this.proximo = proximo;
+	}
+	
+}

@@ -1,0 +1,21 @@
+package listaEncadeada;
+
+public class Celula<T> {
+	private T elemento;
+	private Celula<T> proximo;
+	
+	public T getElemento() {
+		return elemento;
+	}
+	public void setElemento(T elemento) {
+		this.elemento = elemento;
+	}
+	public Celula<T> getProximo() {
+		return proximo;
+	}
+	public void setProximo(Celula<T> proximo) {
+		this.proximo = proximo;
+	}
+	
+	
+}

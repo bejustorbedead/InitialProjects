@@ -1,0 +1,16 @@
+package programa;
+
+import vetores.ListaLigada;
+
+public class Aula_2 {
+
+	public static void main(String[] args) {
+		ListaLigada lista = new ListaLigada();
+		lista.adicionar("Daniel");
+		lista.adicionar("Felipe");
+		System.out.println("Tamanho: "+lista.getTamanho());
+		System.out.println("Primeiro: "+lista.getPrimeiro().getValor());
+		System.out.println("Ultimo: "+lista.getUltimo().getValor());
+	}
+
+}

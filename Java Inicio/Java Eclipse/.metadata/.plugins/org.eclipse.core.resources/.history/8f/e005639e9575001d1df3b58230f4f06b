@@ -1,0 +1,6 @@
+package listaEncadeada;
+
+public class Celula {
+	private Celula proxima;
+	
+}

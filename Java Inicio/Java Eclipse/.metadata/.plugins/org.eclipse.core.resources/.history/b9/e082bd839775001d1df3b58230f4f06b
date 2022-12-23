@@ -1,0 +1,30 @@
+package listaEncadeada;
+
+public class Celula {
+	private Celula proxima; //como os dados são armazenados//
+	private Livro livro;
+	
+	public Celula(celula proxima) {	
+	}
+	
+
+	public Celula getProxima() {
+		return proxima;
+	}
+
+	public void setProxima(Celula proxima) {
+		this.proxima = proxima;
+	}
+
+	public Livro getLivro() {
+		return livro;
+	}
+
+	public void setLivro(Livro livro) {
+		this.livro = livro;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,9 @@
+package listaEncadeada;
+
+public class ListaEncadeada {
+
+	private Celula primeiro;
+	private Celula ultimo;
+	private int tamanho;
+	
+}

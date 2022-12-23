@@ -1,0 +1,23 @@
+package programa;
+
+import java.util.ArrayList;
+
+public class Aula_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<Integer> valor = new ArrayList<Integer>();
+		
+		//adicionar elementos
+		
+		int limite = 10; 
+		long inicial = System.currentTimeMillis();
+		long tempoFinal = System.currentTimeMillis();
+		
+		for (int i = 0; i < limite; i++) {
+			valor.add(i);
+		}
+	}
+
+}

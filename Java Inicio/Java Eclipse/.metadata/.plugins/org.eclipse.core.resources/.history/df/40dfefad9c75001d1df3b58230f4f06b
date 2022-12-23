@@ -1,0 +1,19 @@
+package listaEncadeada;
+
+public class Livro {
+	private String nome;
+	private double preco;
+	private String genero;
+	
+	public Livro() {
+		
+	}
+	
+	public Livro(String nome, double preco, String genero) {
+		this.nome = nome;
+		this.preco = preco;
+		this.genero = genero;
+	}
+	
+	
+}
